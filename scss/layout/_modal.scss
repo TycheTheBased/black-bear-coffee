@@ -1,0 +1,87 @@
+.modal{
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  width: 80vw;
+  z-index: 10000;
+  background-color: $secondary-color;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+}
+
+.close {
+  display: none;
+}
+
+.modal-img-container{
+  height: 50vh;
+  width: 40%;
+  img{
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.modal-message-container{
+display: flex;
+flex-direction: column;
+}
+
+.labels{
+  display: flex;
+  gap: 1rem;
+  margin: .8rem 0;
+  input{
+    border: none;
+    border-bottom: 1px solid $primary-color-80;
+    background-color: map-get($secondary-colors, 'normal');
+    width: 100%;
+  }
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.4);
+  z-index: 100000;
+}
+
+.close-modal{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.send-btn{
+  display: inline;
+  width: 100px;
+}
+
+.text-area{
+  margin: 1rem 0;
+}
+
+@include mobile{
+  .modal{
+    flex-direction: column;
+    padding: 1rem;
+  }
+    .modal-img-container {
+      width: 100%;
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+}

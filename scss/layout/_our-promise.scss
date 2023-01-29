@@ -1,0 +1,44 @@
+.our-promise{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  min-width: 300px;
+  min-height: 300px;
+  @include flex-vertical;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.card_img-container{
+  height: 15vh;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.card-heading{
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: get-primary-color('80');
+}
+
+@include mobile{
+  .our-promise{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-heading{
+    font-size: 1.5rem;
+  }
+
+  .card_img-container{
+    height: 12vh;
+  }
+}

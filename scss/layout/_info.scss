@@ -1,0 +1,54 @@
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: none;
+}
+
+.info-card{
+  background-color: $third-color;
+  border-radius: 30px;
+  color: $secondary-color;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+
+}
+
+.info-icon-container{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i{
+    font-size: 4rem;
+    color: $secondary-color;
+  }
+}
+
+.info-hours{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.info-heading{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@include tablet{
+  .info{
+    @include flex-vertical;
+  }
+}
+
+@include mobile{
+  .info-card{
+    height: 300px;
+    width: 300px;
+  }
+}

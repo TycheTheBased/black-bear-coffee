@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cc2adcaf9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <title>Black Bear Coffee Company</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar_items">
+          <li class="navbar_item">
+            <a href="about-us" class="nav-link">About Us</a>
+          </li>
+          <li class="navbar_item"><a href="menu" class="nav-link">Menu</a></li>
+          <li class="navbar_item">
+            <a href="our-promise" class="nav-link">Our Promise</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <h1 class="heading">
+          <a class="nav-link" href="hero">Black Bear Coffee House</a>
+        </h1>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar_items">
+          <li class="navbar_item">
+            <a class="nav-link" href="gallery">Gallery</a>
+          </li>
+          <li class="navbar_item">
+            <a class="nav-link" href="info">Hours</a>
+          </li>
+          <li class="navbar_item contact-us"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav class="sidebar">
+        <ul class="sidebar_items">
+          <li class="sidebar_item">
+            <a class="nav-link" href="about-us">About Us</a>
+          </li>
+          <li class="sidebar_item"><a class="nav-link" href="menu">Menu</a></li>
+          <li class="sidebar_item">
+            <a class="nav-link" href="our-promise">Our Promise</a>
+          </li>
+          <li class="sidebar_item">
+            <a class="nav-link" href="gallery">Gallery</a>
+          </li>
+          <li class="sidebar_item">
+            <a class="nav-link" href="info">Hours</a>
+          </li>
+          <li class="sidebar_item contact-us"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars burger-menu"></i>
+    </header>
+
+    <div class="backdrop close"></div>
+    <div class="modal close">
+      <div class="close-modal"><i class="fa-solid fa-x"></i></div>
+      <div class="modal-img-container">
+        <img src="../images/contact-img.svg" alt="modal image" />
+      </div>
+      <div class="modal-message-container">
+        <h1 class="heading">We Would Love To Hear From You!</h1>
+        <div class="labels">
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            placeholder="Name"
+            id="username"
+            class="modal-input"
+          />
+        </div>
+        <div class="labels">
+          <label for="Email">Email:</label>
+          <input type="text" placeholder="Email" class="modal-input" />
+        </div>
+
+        <textarea
+          class="text-area modal-input"
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter Message Here."
+        ></textarea>
+        <button class="send-btn">Send</button>
+      </div>
+    </div>
+
+    <main class="hero">
+      <div class="hero_img-container">
+        <img src="../images/hero.jpg" alt="esspresso shot" />
+      </div>
+      <div class="hero-content">
+        <div class="hero-heading">
+          <h4 class="sub-heading hero-subheading">'Tis the Season</h4>
+          <h1 class="heading">To Find the Perfect Holiday Cup</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          molestiae quasi sit numquam nulla doloribus aperiam illo eius, quam
+          error vero, nobis perspiciatis magnam aliquam tempore, facilis maxime
+          debitis vel.
+        </p>
+        <button class="view-menu-btn">
+          <a class="nav-link" href="menu">Menu</a>
+        </button>
+      </div>
+    </main>
+
+    <section class="about-us section section-hidden">
+      <div class="about-us_img-container">
+        <img src="../images/About-us-md.jpg" alt="esspresso machine" />
+      </div>
+      <div class="about-us_content">
+        <div class="about-us_header-container">
+          <h4 class="sub-heading about-us_sub">Fresh. Local. Passionate.</h4>
+          <h1 class="heading">Serving the Community For Over 15 Years</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+          eveniet reiciendis repudiandae veritatis iste libero reprehenderit
+          deleniti voluptatem nemo facere doloribus ut culpa vitae maxime
+          aspernatur, adipisci vel quibusdam ipsa! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Ipsam, numquam architecto dicta deleniti
+          vitae fugit earum quos harum. Accusantium officia optio molestiae,
+          possimus consectetur sed omnis nulla eligendi? Quia, esse.
+        </p>
+      </div>
+    </section>
+
+    <section class="section menu section-hidden">
+      <div class="coffee-menu">
+        <div class="menu-img-container">
+          <img src="../images/about-img.svg" alt="menu" />
+        </div>
+        <div class="menu-accord">
+          <div class="accord-drawer">
+            <div class="menu-name">
+              <h1 class="heading">Coffee</h1>
+              <i class="fa-solid fa-chevron-down menu-active"></i>
+            </div>
+            <div class="menu-options active">
+              <ul>
+                <li class="menu-item">
+                  Coffee
+                  <div class="dots"></div>
+                  $3.95/$4.50/$5.00
+                </li>
+                <li class="menu-item">
+                  Latte<span class="dots"></span>$3.95/$4.50/$5.00
+                </li>
+                <li class="menu-item">
+                  Cappuccino<span class="dots"></span>$3.95/$4.50/$5.00
+                </li>
+                <li class="menu-item">
+                  Americano<span class="dots"></span>$3.95/$4.50/$5.00
+                </li>
+                <li class="menu-item">
+                  Flat White<span class="dots"></span>$3.95/$4.50/$5.00
+                </li>
+              </ul>
+            </div>
+
+            <div class="accord-drawer">
+              <div class="menu-name">
+                <h1 class="heading">Bakery</h1>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+
+              <div class="menu-options">
+                <ul>
+                  <li class="menu-item">
+                    Muffin
+                    <div class="dots"></div>
+                    $3.95
+                  </li>
+                  <li class="menu-item">
+                    Croissant<span class="dots"></span>$4.00
+                  </li>
+                  <li class="menu-item">
+                    Flavoured Croissant<span class="dots"></span>$4.50
+                  </li>
+                  <li class="menu-item">
+                    Danish<span class="dots"></span>$4.00
+                  </li>
+                  <li class="menu-item">
+                    Flavoured Danish<span class="dots"></span>$4.50
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accord-drawer">
+              <div class="menu-name">
+                <h1 class="heading">Merch & Equipment</h1>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+
+              <div class="menu-options">
+                <ul>
+                  <li class="menu-item">
+                    French Press
+                    <div class="dots"></div>
+                    $15.00
+                  </li>
+                  <li class="menu-item">
+                    Pour Over<span class="dots"></span>$15.00
+                  </li>
+                  <li class="menu-item">
+                    T-Shirt<span class="dots"></span>$20.00
+                  </li>
+                  <li class="menu-item">Hat<span class="dots"></span>$15.00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="half-section our-promise section-hidden">
+      <div class="card">
+        <div class="card_img-container">
+          <img src="../images/icon-1.png" alt="" />
+        </div>
+        <h2 class="card-heading">Always Made Fresh.</h2>
+      </div>
+      <div class="card">
+        <div class="card_img-container">
+          <img src="../images/icon-2.png" alt="" />
+        </div>
+        <h2 class="card-heading">Local Beans.</h2>
+      </div>
+      <div class="card">
+        <div class="card_img-container">
+          <img src="../images/icon-3.png" alt="" />
+        </div>
+        <h2 class="card-heading">Freshly Baked.</h2>
+      </div>
+      <div class="card">
+        <div class="card_img-container">
+          <img src="../images/icon-4.png" alt="" />
+        </div>
+        <h2 class="card-heading">Perfect For On The Go.</h2>
+      </div>
+    </section>
+
+    <section class="gallery section-hidden">
+      <div class="slider">
+        <div class="slider-item">
+          <img src="../images/gallery-1.jpg" alt="gallery-1" />
+        </div>
+        <div class="slider-item">
+          <img src="../images/gallery-2.jpg" alt="gallery-2" />
+        </div>
+        <div class="slider-item">
+          <img src="../images/gallery-3.jpg" alt="gallery-3" />
+        </div>
+        <div class="slider-item">
+          <img src="../images/gallery-4.jpg" alt="gallery-4" />
+        </div>
+        <button class="slider-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="slider-previous">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="info half-section section-hidden">
+      <div class="info-card">
+        <div class="info-icon-container">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <div>
+          <ul>
+            <li class="info-hours sub-heading">
+              Monday-Friday:<span class="space"></span>7am - 9pm
+            </li>
+            <li class="info-hours sub-heading">
+              Saturday:<span class="space"></span>9am - 11pm
+            </li>
+            <li class="info-hours sub-heading">
+              Sunday:<span class="space"></span>Closed
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon-container">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h3 class="sub-heading">1234 Meeting Street, Charleston SC, 29405</h3>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon-container">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <ul>
+          <li class="info-hours sub-heading">
+            Phone:<span class="space"></span>(999)-999-9999
+          </li>
+          <li class="info-hours sub-heading">
+            Email: <span class="space"></span> Dummy@gmail.com
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="footer-heading border-left">
+          <h2 class="footer-header">Black Bear Coffee House</h2>
+          <h4>Fresh. Local. Passionate.</h4>
+        </div>
+        <h4 class="footer-subheading">(999)-999-9999</h4>
+        <h4 class="footer-subheading">
+          1234 Meeting Street, Charleston SC, 20405
+        </h4>
+        <h4 class="footer-subheading">Dummy@gmail.com</h4>
+      </div>
+
+      <div class="footer-info middle">
+        <h2 class="footer-header">Sign Up For Our Newsletter:</h2>
+        <div>
+          <input type="text" placeholder="dummy@gmail.com" />
+          <button class="join-btn">Join Now</button>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="footer-heading">
+          <h2 class="footer-header">Follow Our Socials:</h2>
+        </div>
+        <span class="social-icon"
+          ><a href=""><i class="fa-brands fa-instagram"></i></a
+        ></span>
+        <span class="social-icon"
+          ><a href=""><i class="fa-brands fa-facebook"></i></a
+        ></span>
+        <span class="social-icon"
+          ><a href=""><i class="fa-brands fa-twitter"></i></a
+        ></span>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

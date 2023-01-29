@@ -1,0 +1,62 @@
+.gallery{
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid get-primary-color('60');
+  transition: transform 1s, opacity 1s;
+}
+
+.slider-next{
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  font-size: 1.5rem;
+}
+
+.slider-previous {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  font-size: 1.5rem;
+}
+
+.slider{
+  width: 60vw;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s ease;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(.6);
+  }
+}
+
+@include mobile{
+  .slider{
+    width: 100%;
+    height: 70vh;
+  }
+  .slider-next{
+    font-size: 1rem;
+    right: 0;
+  }
+  .slider-previous{
+    font-size: 1rem;
+    left: 0;
+  }
+}

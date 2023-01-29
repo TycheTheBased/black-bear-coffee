@@ -1,0 +1,31 @@
+//Colors
+$primary-color: #263238;
+$primary-color-80: rgba(38, 50, 56, .8);
+$primary-color-60: rgba(38, 50, 56,.6);
+
+$secondary-color: #F2EAE4;
+$third-color: #BE9C79;
+
+$background-color: #BE9C79;
+
+$tablet-header-font-size: 2rem;
+$mobile-header-font-size: 1.5rem;
+
+$font-weights: (
+  'thin': 300,
+  'regular': 400,
+  'medium': 500,
+  'bold': 700
+);
+
+$primary-colors: (
+  'normal': rgba(38,50,56,1),
+  '80': rgba(38,50,56,.8),
+  '60': rgba(38,50,56, .6),
+);
+
+$secondary-colors: (
+  'normal': rgba(242, 234, 228,1),
+  '80': rgba(242, 234, 228, .8),
+  '60': rgba(242, 234, 228,.6)
+);

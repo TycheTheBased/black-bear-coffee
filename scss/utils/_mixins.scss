@@ -1,0 +1,23 @@
+@mixin flex-horizontal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin mobile{
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}

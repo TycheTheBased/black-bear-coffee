@@ -1,0 +1,89 @@
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: get-secondary-color('normal');
+}
+
+.accord-drawer{
+  cursor: pointer;
+}
+
+.coffee-menu{
+  min-height: 80vh;
+  width: 100%;
+  padding: 2rem;
+  background-color: $background-color;
+  @include flex-horizontal;
+}
+
+.menu-img-container{
+  height: 80%;
+  width: 50%;
+  
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.menu-accord{
+  height: 50%;
+  width: 50%;
+}
+
+.menu-name{
+  border-bottom: 1px solid get-secondary-color('normal');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-options{
+  background-color: get-secondary-color('normal');
+  color: get-primary-color('normal');
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+  transition: all 1s ease;
+}
+
+.menu-item{
+  width: 100%;
+  margin: 1rem 0;
+  font-style: italic;
+  display: flex;
+}
+
+.dots{
+  border-bottom: 1px dotted get-primary-color('normal');
+  flex: 2;
+}
+
+.active{
+  display: block;
+}
+
+.menu-active{
+  transform: rotate(180deg);
+}
+
+.fa-solid .fa-chevron-down{
+  display: block;
+}
+
+@include tablet{
+  .coffee-menu{
+    @include flex-vertical;
+  }
+  .menu-img-container{
+    width: 100%;
+  }
+
+  .menu-accord{
+    width: 100%;
+  }
+}

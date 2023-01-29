@@ -1,0 +1,11 @@
+@function weight($weight-name){
+  @return map-get($font-weights, $weight-name);
+};
+
+@function get-primary-color($style){
+  @return map-get($primary-colors, $style);
+}
+
+@function get-secondary-color($style){
+  @return map-get($secondary-colors, $style);
+}
