@@ -1,6 +1,6 @@
 //Navigation
+const sidebar = document.querySelector(".sidebar");
 function navigationHandler() {
-  const sidebar = document.querySelector(".sidebar");
   const hamburgerMenu = document.querySelector(".burger-menu");
   const navbar = document.querySelector("header");
   const menuBtn = document.querySelector(".view-menu-btn");
@@ -109,9 +109,7 @@ function modal() {
 
   closeModalBtn.addEventListener("click", closeModalHandler);
   submitBtn.addEventListener("click", submitMessageHandler);
-  console.log(inputs);
   function submitMessageHandler() {
-    console.log("submited");
     inputs.forEach((input) => {
       input.value = "";
     });
@@ -119,6 +117,7 @@ function modal() {
 
   function closeModalHandler(evt) {
     evt.preventDefault();
+
     modal.classList.toggle("close");
     backdrop.classList.toggle("close");
   }
@@ -127,6 +126,7 @@ function modal() {
     evt.preventDefault();
     modal.classList.toggle("close");
     backdrop.classList.toggle("close");
+    sidebar.classList.toggle("open");
   }
 }
 

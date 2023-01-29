@@ -2,10 +2,10 @@
   position: fixed;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   left: 0;
   right: 0;
-  height: 80vh;
+  min-height: 80vh;
   width: 80vw;
   z-index: 10000;
   background-color: $secondary-color;
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10000;
+  z-index: 20000;
 }
 
 .close {
@@ -53,7 +53,7 @@ flex-direction: column;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0,0,0,.4);
-  z-index: 100000;
+  z-index: 10000;
 }
 
 .close-modal{
@@ -75,7 +75,7 @@ flex-direction: column;
 @include mobile{
   .modal{
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
   }
     .modal-img-container {
       width: 100%;
