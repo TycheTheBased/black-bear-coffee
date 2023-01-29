@@ -5,7 +5,7 @@
   padding: 1rem 2rem;
   left: 0;
   right: 0;
-  max-height: 80vh;
+  min-height: 80vh;
   width: 80vw;
   z-index: 10000;
   background-color: $secondary-color;
@@ -76,6 +76,8 @@ flex-direction: column;
   .modal{
     flex-direction: column;
     padding: 2rem;
+    max-height: 90vh;
+    top: 1rem;
   }
     .modal-img-container {
       width: 100%;
@@ -83,5 +85,9 @@ flex-direction: column;
         object-fit: cover;
         object-position: center;
       }
+    }
+
+    .labels{
+      margin: .5rem 0;
     }
 }
